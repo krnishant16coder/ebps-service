@@ -1,0 +1,36 @@
+//syntax = "proto3";
+//
+//option java_multiple_files = true;
+//option java_package = "com.example.ebps_service.grpc";
+//option java_outer_classname = "AccountProto";
+//
+//package account;
+//
+//service AccountService {
+//
+//  rpc GetTransactions(TransactionRequest)
+//      returns (TransactionResponseList);
+//
+//}
+//
+//message TransactionRequest {
+//  string accountNumber = 1;
+//  string fromDate = 2;
+//  string toDate = 3;
+//}
+//
+//message TransactionResponse {
+//  string transactionId = 1;
+//  string accountNumber = 2;
+//  string transactionDate = 3;
+//  string settleDate = 4;
+//  double amount = 5;
+//  int32 quantity = 6;
+//  string country = 7;
+//  string currency = 8;
+//  string accountType = 9;
+//}
+//
+//message TransactionResponseList {
+//  repeated TransactionResponse transactions = 1;
+//}
