@@ -1,4 +1,3 @@
-// This class belongs to the grpc package
 package com.example.ebps_service.grpc;
 
 // Import TransactionResponse DTO
@@ -61,7 +60,6 @@ public class AccountGrpcService extends AccountServiceGrpc.AccountServiceImplBas
 
 		// Step 1: Extract parameters from gRPC request
 		// request.getAccountNumber() gets the account number from the request
-		// LocalDate.parse(request.getFromDate()) converts string date to LocalDate
 		// LocalDate.parse(request.getToDate()) converts string date to LocalDate
 		//
 		// Then call the SearchService to search the database
